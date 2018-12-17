@@ -1,9 +1,26 @@
 
 export class CatGenerator{
-    constructor(weather)
+    constructor()
     {
-        this.weather=weather;
+        this.weather="clean";
         console.log("CatGenerator is ONLINE :D")
+    }
+    setWeather(weather){
+        this.weather=weather;
+    }
+
+    changeCats(){
+        switch(weather){  //wea
+            case "rain":{catsRain();
+                break;}
+            case "sun":{catsSun();
+                break;}
+            case "snow":{catSnow();
+                break;}
+            case "sky":{catsSky();
+                break;} 
+
+        }
     }
 
     catsRain(){
