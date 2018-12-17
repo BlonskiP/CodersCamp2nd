@@ -1,0 +1,36 @@
+body {
+    background-color: #C0C0C0;
+}
+
+#SearchBar {
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid black;
+    outline: none;
+    width: 260px;
+    text-align: left;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px: -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+}
+
+#SearchButton {
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 8px;
+    background: #00BFFF;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px: -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#SearchButton:hover {
+    background: #0000FF;
+}

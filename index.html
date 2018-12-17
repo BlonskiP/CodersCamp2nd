@@ -3,8 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style/style.css">
+    <script src="/src/SBar.js"></script>
   </head>
   <body>
+
+    <center>
+      <form id="form">
+        <input type="text" id="SearchBar" placeholder="Szukaj miasta..." value="" maxlength="20" autocomplete="on"
+          onMouseDown="active();"><input type="submit" id="SearchButton" value="Szukaj" />
+      </form>
+    </center>
+
     <div class="container">
       <p id="message">test</p>
     </div>
