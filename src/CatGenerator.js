@@ -1,5 +1,9 @@
+import $ from "jquery";
+const rain="/images/rain.jpg";
 
 export default class CatGenerator{
+
+    
     constructor()
     {
         this.weather="clean";
@@ -16,12 +20,13 @@ export default class CatGenerator{
     {
         for(let i=0;i<catsQuantity;i++)
         {
-        let cat=document.createElement("DIV");
+        let cat=document.createElement("IMG");
         cat.id="cat"+i;
         cat.className=catClass;
         cat.innerHTML= "cat";
-        this.catBox.appendChild(cat);
 
+        this.catBox.appendChild(cat);
+        cat.src=rain;
         }
     }
     changeCats(){
@@ -39,15 +44,15 @@ export default class CatGenerator{
     }
 
     catsRain(){
-
+        console.log("Cats will rain");
     }
     
     catsSun(){
-
+        console.log("Cats will sun bathe");
     }
 
     catsSnow(){
-
+        console.log("Cats will play with snow");
     }
 
     
