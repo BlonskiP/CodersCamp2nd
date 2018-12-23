@@ -1,4 +1,5 @@
 import CatGenerator from "./CatGenerator";
 
-let cats = new CatGenerator();
-cats.createCats(5, "cat");
+let cats = new CatGenerator("cleanSky");
+cats.createCats(5, "cat rotating");
+cats.catsRain();
