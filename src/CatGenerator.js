@@ -48,22 +48,28 @@ export default class CatGenerator{
            let cat=this.catArray[i].cat;
            cat.src=rain;
            cat.className+=" rotating";
-         
-          let newPosition=position+"px";
-
-           document.getElementById("cat"+i).style.left=newPosition;
+           
+           let newPositionY=Math.random()*1500;
+           this.catArray[i].yPosition=newPositionY;
+          
+          let newPositionX=position+"px";
+           document.getElementById("cat"+i).style.top=newPositionY+"px";
+           document.getElementById("cat"+i).style.left=newPositionX;
            position+=screen.width/this.catArray.length;
 
        }
-       this.catsGoDown();
+      setInterval(this.catsGoDown,10);
+     
     }
-    catsGoDown()
+    catsGoDown= () =>
     {
+       
         for(let i=0;i<this.catArray.length;i++)
        {
         let cat=this.catArray[i].cat;
-        cat.style.top=5*i+"px";
+        this.catArray[i].goDown(1);
        }
+       
     }
     catsSun(){
         console.log("Cats will sun bathe");
